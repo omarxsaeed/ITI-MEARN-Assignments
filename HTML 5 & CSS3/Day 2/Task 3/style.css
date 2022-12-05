@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.median-font {
+    font-family: moderno-fb;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav .main-nav--items {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 4px;
+}
+
+.logo-container img {
+    width: auto;
+    height: 24px;
+}
+
+.secondary-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    background-color: #e9f5f5;
+}
+
+.hero-section--main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.hero-section--main---header {
+    font-size: 36px;
+}

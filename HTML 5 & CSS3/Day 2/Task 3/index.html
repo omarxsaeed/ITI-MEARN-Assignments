@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML5 & CSS3 Day 2</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav class="main-nav">
+            <!-- <img
+                width="280"
+                height="56"
+                src="https://darinka.design/median/wp-content/uploads/Logo.png"
+                class="custom-logo"
+                alt="Median"
+            /> -->
+            <div class="logo-container median-font">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Medium_logo_Monogram.svg"></img>
+                <h1>Median.</h1>
+            </div>
+
+            <div class="main-nav--items">
+                <form class="search-bar">
+                    <input type="search" placeholder="Search..." />
+                    <button type="submit">Search</button>
+                </form>
+                <button>Sign In</button>
+                <button class="create-account">Create an account</button>
+            </div>
+        </nav>
+        <nav class="secondary-nav">
+            <ul>
+                <li><a href="#" class="secondary-nav--link">Home</a></li>
+                <li><a href="#" class="secondary-nav--link">Ui/Ux Design</a></li>
+                <li><a href="#" class="secondary-nav--link">Web Development</a></li>
+                <li><a href="#" class="secondary-nav--link">Typography</a></li>
+                <li><a href="#" class="secondary-nav--link">Freelance Business</a></li>
+                <li><a href="#" class="secondary-nav--link">Lifestyle</a></li>
+                <li><a href="#" class="secondary-nav--link">Startups</a></li>
+                <li><a href="#" class="secondary-nav--link">More Layouts &darr; </a></li>
+            </ul>
+        </nav>
+        <main class="hero-section">
+            <div class="hero-section--main">
+                <h2 class="median-font hero-section--main---header">Welcome to Median, a WordPress theme.</h2>
+                <p>
+                    The theme has amazing layouts, practical built-in features, great bones and lightning load
+                    speed. Download it now!
+                </p>
+                <button class="learn-more-btn">Learn more</button>
+                <button class="create-account-btn">Create an account</button>
+            </div>
+            <img
+                src="https://darinka.design/median/wp-content/uploads/cover.png"
+                alt=""
+                class="wp-image-1067"
+                loading="lazy"
+                srcset="
+                    https://darinka.design/median/wp-content/uploads/cover.png         552w,
+                    https://darinka.design/median/wp-content/uploads/cover-300x195.png 300w
+                "
+                sizes="(max-width: 552px) 100vw, 552px"
+            />
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
