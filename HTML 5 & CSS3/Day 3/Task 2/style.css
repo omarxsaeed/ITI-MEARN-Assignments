@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #454454;
+    color: #7cafca;
+    overflow: hidden;
+}
+p h1,
+h2 {
+    text-align: center;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+}
+
+.snowflake {
+    position: absolute;
+    animation: snowfall infinite ease-in-out;
+}
