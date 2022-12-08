@@ -369,6 +369,14 @@ body {
     .top-blogs-section--blog {
         width: 100%;
     }
+
+    .footer {
+        font-size: 0.7rem;
+    }
+
+    .footer--social---media a {
+        font-size: 1.3rem;
+    }
 }
 
 /* MEDIA QUERIES */

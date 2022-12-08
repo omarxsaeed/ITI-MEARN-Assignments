@@ -64,11 +64,15 @@
 
             <main class="main-content">
                 <section class="main-content--img-container">
-                    <img
+                    <!-- <img
                         class="main-content--img-container---img"
                         src="./img/gallery/gallery-9.jpg"
                         alt="picture for the main content"
-                    />
+                    /> -->
+                    <picture>
+                        <source media="(max-width:900px)" srcset="./img/meals/meal-2.jpg" />
+                        <img src="./img/meals/meal-1.jpg" alt="picture of our top meal" />
+                    </picture>
                     <div class="main-content--img-container---caption">
                         <h4>Share your food sense</h4>
                         <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, illum.</h5>
