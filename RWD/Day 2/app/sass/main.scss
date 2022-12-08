@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+$color-primary: #495057;
+$color-secondary: #f8f9fa;
+$color-red: #e63946;
+$font-size: 18px;
+$font-family: "Lato", sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+}
+
+@mixin backgroundImage(
+    $image: 0,
+    $color: transparent,
+    $attachment: scroll,
+    $blend: normal,
+    $size: auto auto
+) {
+    background-image: $image;
+    background-color: $color;
+    background-attachment: $attachment;
+    background-blend-mode: $blend;
+    background-size: $size;
+}
