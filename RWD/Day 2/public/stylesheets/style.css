@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+:root {
+  --color-primary: #495057;
+  --color-secondary: #f8f9fa;
+  --color-red: #e63946;
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+}
+.navbar .navbar-brand:link {
+  color: var(--color-secondary);
+  font-size: 1.25rem;
+}
+.navbar .navbar-brand:visited {
+  color: var(--color-secondary);
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:active {
+  color: var(--color-secondary);
+}
+.navbar .navbar-nav {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+.navbar .navbar-nav .nav-link:link,
+.navbar .navbar-nav .nav-link:visited {
+  color: var(--color-secondary);
+  text-transform: uppercase;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:active {
+  font-weight: bold;
+}
+
+/* NAVBAR */
+/* Hero Section */
+.hero-section {
+  height: 65vh;
+  background-image: url("../../img/image1.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-secondary);
+  justify-content: center;
+  gap: 2rem;
+}
+.hero-section h2 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+.hero-section .call-to-action-Btn:link,
+.hero-section .call-to-action-Btn:visited {
+  border: 1px solid var(--color-red);
+  color: var(--color-secondary);
+  background-color: var(--color-red);
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+}
+.hero-section .call-to-action-Btn:hover,
+.hero-section .call-to-action-Btn:active {
+  color: var(--color-secondary);
+}
+
+/* Hero Section */
+/* Card Section */
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 25vh;
+  align-items: center;
+}
+.cards-container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+.cards-container .card h3 {
+  font-size: 2rem;
+}
+.cards-container .card span {
+  font-size: 3rem;
+}
+.cards-container .card p {
+  text-align: center;
+}
+
+/* Card Section */
+/* Get started Section */
+.get-started-section {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.75) url("../../img/lights.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: color;
+  color: var(--color-secondary);
+}
+.get-started-section h2 {
+  font-size: 3rem;
+}
+
+/* Get started Section */
+/* More info section */
+.more-info-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.more-info-section div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.more-info-section div h3 {
+  font-size: 2rem;
+}
+.more-info-section div a:link,
+.more-info-section div a:visited {
+  font-size: 1.5rem;
+  color: var(--color-red);
+  border: 1px solid var(--color-red);
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  width: fit-content;
+}
+.more-info-section div a:hover,
+.more-info-section div a:active {
+  color: var(--color-secondary);
+  background-color: var(--color-red);
+  transition: all 0.2s ease-in-out;
+}
+.more-info-section img {
+  width: 50%;
+}
+
+/* More info section */
+/* Product section */
+.product-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  justify-items: center;
+  width: 80%;
+  margin: 10vh auto;
+}
+.product-section section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  height: 10rem;
+  color: var(--color-secondary);
+}
+.product-section h3 {
+  font-size: 1.5rem;
+}
+.product-section p {
+  text-align: center;
+}
+.product-section span {
+  font-size: 3rem;
+}
+.product-section section:nth-child(odd) {
+  background: var(--color-red);
+}
+.product-section section:nth-child(even) {
+  background: var(--color-primary);
+}
+
+/* Product section */
+
+/*# sourceMappingURL=style.css.map */
