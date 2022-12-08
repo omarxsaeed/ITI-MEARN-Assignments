@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Day 5</title>
+</head>
+<body>
+    <h1>Javascript Day 5</h1>
+    <hr>
+    <div id="task1divid" name="task1div" class="task1divclass"></div>
+    <div class="udyr-stances-">
+        <img class="udyrStance" src="udyr1.jpeg" alt="Spirit guard Udyr">
+        <img class="udyrStance" src="udyr2.jpeg" alt="Spirit guard Udyr">
+        <img class="udyrStance" src="udyr3.jpeg" alt="Spirit guard Udyr">
+        <img class="udyrStance" src="udyr4.jpeg" alt="Spirit guard Udyr">    
+    </div>
+    <hr>
+    <button class="createDivBtn">Click me</button>
+    <hr>
+    <form action="">
+        <fieldset>
+            <legend>Registration Forum</legend>
+            <label for="full-name">
+                Enter your full name
+                <input id="full-name" name="full-name" type="text" required>
+            </label>
+
+            <label for="email">
+                Enter your email
+                <input id="email" name="email" type="email" required>
+            </label>
+
+            <label for="city">
+                Choose your city
+                <select id="city" name="city">
+                    <option value="">Select a city</option>
+                    <option value="Port-Said">Port Said</option>
+                    <option value="Cairo">Cairo</option>
+                    <option value="Alexandira">Alexandira</option>
+                    <option value="Aswan">Aswan</option>
+                    <option value="Dumiat">Dumiat</option>
+                    <option value="Tanta">Tanta</option>
+                    <option value="Beni-Suef">Beni Suef</option>
+
+
+                </select>
+            </label>
+
+            <label for="password">
+                Enter your password
+                <input id="password" name="password" type="password">
+            </label>
+
+            <label for="terms-and-conditions" name="terms-and-conditions">
+                <input id="terms-and-conditions" type="checkbox" name="terms-and-conditions"> I accept the <a href="#">terms and conditions</a>
+            </label>
+            <input class="submit-btn" type="submit" value="Submit">
+        </fieldset>
+    </form>
+    
+    <div class="img-slider">
+        <div class="legend-cave">
+            <img class="legend" src="yasuo.jpeg" alt="picture of legends">
+        </div>
+        <div class="ctrl-btns-group">
+            <button class="ctrl-btn next">Next</button>
+            <button class="ctrl-btn previous">Previous</button>
+            <button class="ctrl-btn show-all">Show all</button>
+            <button class="ctrl-btn stop">Stop</button>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

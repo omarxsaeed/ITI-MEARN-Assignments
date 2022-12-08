@@ -1,0 +1,21 @@
+body {
+    height: 1500px;
+}
+h1, h2 {
+    text-align: center;
+}
+
+.udyr-stances{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.legendCave {
+    width: 600px;
+}
