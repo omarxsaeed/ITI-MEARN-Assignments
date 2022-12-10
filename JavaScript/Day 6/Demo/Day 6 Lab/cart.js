@@ -1,16 +1,16 @@
 // var cartContainer = document.querySelector(".cart-container");
 // var pagebody = document.getElementsByTagName("body");
-window.addEventListener("load", function(){
+window.addEventListener("load", function () {
     var totalPrice = 0;
     var cart = JSON.parse(this.localStorage.getItem("cart"));
     console.log(cart);
-    
-    for(var i = 0; i < cart.length; i++){
+
+    for (var i = 0; i < cart.length; i++) {
         var item = document.createElement("div");
         var itemDetails = document.createElement("div");
-        var title =  document.createElement("h2");
-        var price =  document.createElement("p");
-        var img =  document.createElement("img");
+        var title = document.createElement("h2");
+        var price = document.createElement("p");
+        var img = document.createElement("img");
 
         title.innerText = cart[i].title;
         price.innerText = "$" + cart[i].price;
@@ -31,10 +31,6 @@ window.addEventListener("load", function(){
     var totalPriceText = document.createElement("h3");
     totalPriceText.innerText = "Total of: $" + totalPrice;
     document.body.appendChild(totalPriceText);
-
 });
 
-
-function showCart() {
-
-}
+function showCart() {}

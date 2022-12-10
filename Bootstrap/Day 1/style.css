@@ -1,0 +1,17 @@
+/* HERO SECTION */
+
+.hero-section {
+    height: 100vh;
+    background: url("./img/home.jpg") rgba(0, 0, 0, 0.7) no-repeat center center fixed;
+    background-blend-mode: color;
+    object-fit: contain;
+}
+
+.explore-section {
+    height: 30vh;
+    /* background-color: #333333; */
+}
+
+/* .create-section {
+    background-color: #007afd;
+} */
