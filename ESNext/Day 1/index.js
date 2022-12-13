@@ -132,8 +132,27 @@ console.log(studentsList);
 // }
 
 studentsList.forEach((courses, student) => {
-    console.log(`Student: Omar`);
+    console.log(`Student: ${student}`);
     courses.forEach((course) => {
         console.log(`The student scored ${course.grade} in the course: ${course.courseName} `);
+    });
+});
+
+let studentsDropDown = document.getElementById("students");
+
+studentsList.forEach((courses, student) => {
+    let studentOption = document.createElement("option");
+    studentOption.innerText = student;
+    studentOption.value = student;
+    // studentOption.addEventListener("select", function () {
+    //     console.log("Hey");
+    // });
+    studentsDropDown.appendChild(studentOption);
+});
+
+studentsDropDown.addEventListener("change", (e) => {
+    let studentCourses = studentsList.get(e.target.value);
+    studentCourses.forEach((course) => {
+        console.log(`${studentsDropDown.value} scored ${course.grade} in the course: ${course.courseName} `);
     });
 });
