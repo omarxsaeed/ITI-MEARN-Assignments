@@ -1,0 +1,6 @@
+Required Assignments to be delivered:
+=====================================
+
+1- Font Resizer.
+2- Box Animator.
+3- Author any basic jQuery Plugin 

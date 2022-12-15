@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Selectors Exercise</title>
+        <style>
+            section {
+                border: 1px solid #cacaca;
+                border-radius: 1px;
+                min-height: 200px;
+                margin: 20px;
+                padding: 10px;
+            }
+            h1 {
+                text-align: center;
+            }
+            a {
+                display: block;
+                margin: 10px;
+                line-height: 50px;
+            }
+            section:not(:nth-child(6)) {
+                text-align: center;
+            }
+            .container1 div {
+                border: 1px solid #cacaca;
+                width: 150px;
+                display: inline-block;
+                text-align: center;
+                height: 10em;
+                line-height: 10em;
+            }
+            .container1 p {
+                margin: 0;
+            }
+            figure {
+                border: 1px solid #cacaca;
+                width: 150px;
+                padding: 10px;
+                display: inline-block;
+            }
+            input:not([type="checkbox"]) {
+                display: block;
+                margin: 5px auto;
+            }
+            table td,
+            table th {
+                padding: 10px;
+                border: 1px solid #cacaca;
+            }
+            .man {
+                background: cyan;
+            }
+            .woman {
+                background: pink;
+            }
+
+            .black {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to JQuery Course</h1>
+        </header>
+        <section class="container1">
+            <div class="red">
+                <p class="cyan">Hello Ahmed</p>
+            </div>
+            <div class="blue">
+                <p class="pink">Hello Ibrahim</p>
+            </div>
+            <div class="green">
+                <p class="orange">Hello Salma</p>
+            </div>
+        </section>
+        <section class="container2">
+            <p>www.google.com</p>
+            <p>www.ieee.org</p>
+            <p>www.facebook.com</p>
+        </section>
+        <section class="container3">
+            <img src="img/coffee.png" alt="" width="100" height="100" />
+        </section>
+        <section class="container4">
+            <table>
+                <tr class="h-row">
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+                <tr class="row1">
+                    <td class="col-name">Mohsen</td>
+                    <td class="col-email">mohsen@gmail.com</td>
+                    <td class="col-age">19</td>
+                </tr>
+                <tr class="row3">
+                    <td class="col-name">Amany</td>
+                    <td class="col-email your-email">amany@gmail.com</td>
+                    <td class="col-age">21</td>
+                </tr>
+            </table>
+        </section>
+        <section class="container5">
+            <ul>
+                <li class="task1">Bring Milk</li>
+                <li class="task2">Buy Bike</li>
+                <li class="task3">Learn JQuery</li>
+                <li class="task4">Practice JQuery</li>
+                <li class="task5">Enjoy JQuery</li>
+                <li class="task6">Don't forget JavaScript</li>
+                <li class="task7">break</li>
+                <li class="task8">another break</li>
+                <li class="task9">break from break</li>
+                <li class="task10">
+                    other tasks
+                    <ol>
+                        <li>mini-task1</li>
+                        <li>mini-task2</li>
+                        <li>mini-task3</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+        <section class="container6">
+            <form action="" id="my-form">
+                <input type="text" name="username" id="username" />
+                <input type="password" name="password" id="password" />
+                <input type="checkbox" name="remember" id="remember" /> Remember Me
+                <input type="submit" value="Submit" />
+            </form>
+        </section>
+        <footer>
+            <p>iti copy right reserved</p>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script>
+            // $(document).ready(function () {
+            //     $(".container1").wrapInner(function () {
+            //         $(".black").append("<div>append text</div>");
+            //     });
+            // });
+            $(".container1").append(`<div class="black">Black Div</div>`);
+            $(".container1").prepend(`<div class="white">White Div</div>`);
+            $(".blue").prepend(`<p class="yellow">yellow</p>`);
+            $(".container2")
+                .children()
+                .each(function () {
+                    let text = "http://" + $(this).text();
+                    $(this).replaceWith(`<a href="${text}">${text}</a>`);
+                });
+            $(".container3 img").wrap("<figure></figure>").append(`<figcaption>Coffee</figcaption>`);
+            $(".container3 img").after(`<figcaption>Coffee</figcaption>`);
+
+            $(".container4 .col-age").empty();
+            $('.container4 .col-name:contains("Mohsen")').addClass("man");
+            $("td").each(function () {
+                if ($(this).hasClass("your-email")) {
+                    $(this).removeClass("your-email");
+                } else {
+                    $(this).addClass("your-email");
+                }
+            });
+            // $("td").toggleClass("your-email");
+
+            $(".container5 li")
+                .filter(function (index) {
+                    console.log(index);
+                    return (index + 1) % 3 === 0;
+                })
+                .css("background-color", "red");
+
+            $(".container6 #my-form #remember").prop("checked", true);
+            $(".container6 #my-form #username").attr("name", "Omar");
+        </script>
+    </body>
+</html>
