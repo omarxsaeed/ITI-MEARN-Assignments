@@ -1,0 +1,13 @@
+
+Student 1 => Name: Omar, Grade: 100
+            
+Student 2 => Name: Anas, Grade: 90
+            
+Student 4 => Name: Sarah, Grade: 85
+            
+Student 3 => Name: Hager, Grade: 95
+            Student 1 => Name: Omar, Grade: 100
+            Student 2 => Name: Anas, Grade: 90
+            Student 3 => Name: Hager, Grade: 95
+            Student 4 => Name: Sarah, Grade: 85
+            
