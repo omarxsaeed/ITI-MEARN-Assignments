@@ -13,6 +13,3 @@ const todoSchema = mongoose.Schema({
     tags: { type: [String], max: [10, "Max length for a tag is 10 characters"] },
     createdAt: { type: Date, default: Date.now },
 });
-
-const Todo = mongoose.model("todos", todoSchema);
-module.exports = Todo;
