@@ -1,0 +1,16 @@
+{
+    "name": "unit-testing",
+    "version": "1.0.0",
+    "description": "Unit Testing Day 1",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "keywords": [],
+    "author": "Omar Saeed",
+    "license": "ISC",
+    "devDependencies": {
+        "chai": "^4.3.7",
+        "mocha": "^10.2.0"
+    }
+}
