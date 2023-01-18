@@ -34,7 +34,10 @@ describe("Index", function () {
     });
     describe("createArray()", function () {
         //Bonus-->//try to delay the testing process 5 seconds
-        this.timeout(5000);
+        beforeEach(function (done) {
+            this.timeout(5000); // A very long environment setup.
+            setTimeout(done, 2500);
+        });
 
         //make a variable and intialize it by 1 and before each test increase it by one and pass it to every function call
         let testCounter = 1;
