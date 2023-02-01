@@ -1,0 +1,25 @@
+<h1>Make a new order</h1>
+<div class="container-fluid d-flex p-0 my-2">
+  <img [src]="storeLogo" class="" alt="{{ storeName }}" width="3%" />
+  <h1 class="">{{ storeName }} Store</h1>
+</div>
+<h3 class="" *ngIf="Discount != 0">
+  We offer an explicit discount of: {{ Discount }}
+</h3>
+
+<select
+  class="form-select my-2 p-0"
+  name="categories"
+  id="categories"
+  [(ngModel)]="selectedCategory"
+>
+  <option value="0" selected>Select All</option>
+  <option *ngFor="let category of categoryList" [value]="category.id">
+    {{ category.name }}
+  </option>
+</select>
+<app-products
+  [receivedCategoryID]="selectedCategory"
+  (onTotalPriceChange)="updateTotalPrice($event)"
+></app-products>
+<h2>Order Total Price: {{ receivedOrderTotalPrice | currency }}</h2>
