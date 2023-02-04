@@ -12,7 +12,7 @@ export class MathService {
       let i = 0;
       let string = '';
       this.timer = setInterval(() => {
-        if (i != limit) {
+        if (i <= limit) {
           string = `${start} * ${i} =${start * i}`;
           Observable.next(string);
           i++;
