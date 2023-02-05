@@ -21,7 +21,7 @@
         "wrappy": "^1.0.2"
     },
     "scripts": {
-        "test": "nodemon jasmine"
+        "test": "nodemon --exec jasmine"
     },
     "keywords": [],
     "author": "Omar Saeed",

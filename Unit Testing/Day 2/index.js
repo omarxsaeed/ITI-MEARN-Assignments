@@ -1,16 +1,17 @@
-
- function sum(vals) {
+function sum(vals) {
     let sum = 0;
 
     vals.forEach((val) => {
-      sum += val;
+        sum += val;
     });
 
     return sum;
-  }
+}
 
- function positive(vals) {
+function positive(vals) {
     return vals.filter((x) => {
-      return x > 0;
+        return x > 0;
     });
-  }
+}
+
+module.exports = { sum, positive };
