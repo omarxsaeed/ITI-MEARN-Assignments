@@ -1,0 +1,4 @@
+<img src="https://image.tmdb.org/t/p/w500/{{ currMovie.poster_path }}" alt="" />
+<h3>The Plot</h3>
+<p>{{ currMovie.overview }}</p>
+<p *ngFor="let genre of currMovie.genre_ids">{{}}</p>

@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row gap-5 align-items-center justify-content-center d-flex">
+    <div class="card p-0" style="width: 24rem" *ngFor="let movie of moviesList">
+      <a [routerLink]="['/movies', movie.id]" class="d-inline">
+        <img
+          src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body d-flex justify-content-between">
+          <h5 class="card-title w-75">{{ movie.title }}</h5>
+          <p class="card-text fw-bold">
+            {{ movie.vote_average }}
+            <i class="bi bi-star-fill text-warning"></i>
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

@@ -19,7 +19,9 @@ import { HighlightProductDirective } from './Directives/highlight-product.direct
 import { DefaultImagePipe } from './Pipes/default-image.pipe';
 import { FilterPipe } from './Pipes/filter.pipe';
 import { MathComponent } from './Components/math/math.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { MoviesComponent } from './Components/movies/movies.component';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,8 +40,10 @@ import { MathComponent } from './Components/math/math.component';
     DefaultImagePipe,
     FilterPipe,
     MathComponent,
+    MoviesComponent,
+    MovieDetailsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

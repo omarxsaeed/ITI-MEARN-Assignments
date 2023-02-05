@@ -9,13 +9,13 @@ export class MathService {
   constructor() {}
   math(start: number, limit: number): Observable<string> {
     return new Observable<string>((Observable) => {
-      let i = 0;
-      let string = '';
+      let counter = 0;
+      let result = '';
       this.timer = setInterval(() => {
-        if (i <= limit) {
-          string = `${start} * ${i} =${start * i}`;
-          Observable.next(string);
-          i++;
+        if (counter <= limit) {
+          result = `${start} * ${counter} =${start * counter}`;
+          Observable.next(result);
+          counter++;
         }
       }, 1000);
     });
